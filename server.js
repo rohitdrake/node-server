@@ -51,6 +51,12 @@ app.get('/bad', (req, res)=>{
   });
 });
 
+app.get('/projects', (req, res)=>{
+  res.render('project.hbs', {
+    pageTitle: 'Project page',
+    message: 'Welcome to my project page'
+  });
+});
 
 
 app.listen(port, ()=>{
